@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:id="@+id/id_header"
+        android:layout_width="0dp"
+        android:text="Text"
+        android:textSize="23dp"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_writer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/id_photo_news"
+        android:layout_width="0dp"
+        app:srcCompat="@drawable/noimage"
+        android:layout_marginStart="9sp"
+        android:layout_marginEnd="9sp"
+        android:layout_height="220sp"
+        android:layout_marginTop="9sp" />
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_header"
+        android:text="Text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="9sp"
+        android:layout_marginEnd="15sp"
+        android:id="@+id/id_date"/>
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Text"
+        app:layout_constraintTop_toBottomOf="@+id/id_date"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginTop="3sp"
+        android:id="@+id/id_writer"
+        android:layout_marginEnd="15sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"/>
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30sp"
+        android:text="Text"
+        android:id="@+id/id_count_of"
+        android:textStyle="bold"
+        android:layout_marginEnd="30sp"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_photo_news"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/id_min"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
